@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': 'About', 'text': '\n \n 可愛卯咪 \n 40823123', 'tags': '', 'url': 'About.html'}]};
+var tipuesearch = {"pages": [{'title': 'usb', 'text': '\n', 'tags': '', 'url': 'usb.html'}, {'title': '迴圈程式', 'text': "https://mde.tw/dartpad/?id=bf9efbcfd84499dee2da74f8e86f2d04 \n gist: 連結 \n void main() {\n  for (int i = 0; i < 5; i++) {\n    print('hello ${i + 1}');\n  }\n}\n \n", 'tags': '', 'url': '迴圈程式.html'}, {'title': '可愛卯咪', 'text': '\n 40823123', 'tags': '', 'url': '可愛卯咪.html'}]};
