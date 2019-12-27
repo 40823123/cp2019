@@ -1,5 +1,33 @@
 <h1>w16查驗考試</h1>
-<p><button onclick="getHtmlDart('roc_flag')">ROC Flag </button><button onclick="getHtmlDart('helloworld')">helloworld </button><button onclick="getHtmlDart('USA_flag')">USA Flag</button><span><span> </span></span><span><span> </span></span><button onclick="getHtmlDart('temperature')">temperature </button><button onclick="getHtmlDart('temp2')">temp2 </button><button onclick="getHtmlDart('放大')">放大</button><button onclick="getHtmlDart('回復')">回復</button></p>
+<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823123&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823123&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823123&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<p><button onclick="getHtmlDart('rungekutta')">rungekutta </button><button onclick="getHtmlDart('roc_flag')">ROC Flag </button><button onclick="getHtmlDart('helloworld')">helloworld </button><button onclick="getHtmlDart('USA_flag')">USA Flag</button><span><span> </span></span><span><span> </span></span><button onclick="getHtmlDart('temperature')">temperature </button><button onclick="getHtmlDart('temp2')">temp2 </button><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823123&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p>
 <h1>RungeKutta</h1>
 <p>未摩擦</p>
 <p><img src="https://40823131.github.io/cp2019/images/EXCEL_BoTIp2GRRS.png"/></p>
