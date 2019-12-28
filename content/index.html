@@ -138,7 +138,7 @@ init_mathjax();
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='w16查驗考試.html'>w16查驗考試</a><li><a href='First.html'>First</a><li><a href='RungeKutta.html'>RungeKutta</a><li><a href='LOOP.html'>LOOP</a><li><a href='程式.html'>程式</a><li><a href='生物.html'>生物</a></li>
+                     <li><a href='w16查驗考試.html'>w16查驗考試</a><li><a href='RungeKutta.html'>RungeKutta</a><li><a href='Hello.html'>Hello</a><li><a href='LOOP.html'>LOOP</a><li><a href='程式.html'>程式</a><li><a href='生物.html'>生物</a></li>
                       </ul>
                 </nav>
               </div>
@@ -149,9 +149,37 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='First.html'>Next</a> >> First<br /><h1>w16查驗考試</h1>
-<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button><button onclick="getHtmlDart('USA_flag')">USA Flag</button><span><span> </span></span><span><span> </span></span><button onclick="getHtmlDart('temperature')">temperature</button></p>
-<br /> <a href='First.html'>Next</a> >> First</div>
+    <div id="tipue_search_content"> <a href='RungeKutta.html'>Next</a> >> RungeKutta<br /><h1>w16查驗考試</h1>
+<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823123&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823123&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823123&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<p><button onclick="getHtmlDart('rungekutta')">rungekutta </button><button onclick="getHtmlDart('roc_flag')">ROC Flag </button><button onclick="getHtmlDart('helloworld')">helloworld </button><button onclick="getHtmlDart('USA_flag')">USA Flag</button><span><span> </span></span><span><span> </span></span><button onclick="getHtmlDart('temperature')">temperature </button><button onclick="getHtmlDart('temp2')">temp2 </button><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823123&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p>
+<br /> <a href='RungeKutta.html'>Next</a> >> RungeKutta</div>
         
     <!-- footer -->
       <div class="container">
