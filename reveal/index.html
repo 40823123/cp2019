@@ -41,13 +41,13 @@ CMSimfly 網際內容管理
     <script type="text/template">
 ## CMSimfly 網際內容管理
 
-### KMOLab
+### 40823123
 
 <small>
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [40823123]
 </small>
 
-[CMSimfly 網誌](./../blog/index.html)
+[CP2019 網誌](./../blog/index.html)
 
 
     </script>
@@ -57,14 +57,10 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-# 投影片快捷鍵
+# dart程式
+<iframe width="800" height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
 
     </script>
 </section>
@@ -75,12 +71,8 @@ Created by [KMOLab](http://lab.kmol.info/)
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
+各種按鈕
+<iframe width="800" height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823123&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark"></iframe>
     </script>
 </section>
 
@@ -90,32 +82,9 @@ $$I = \int \rho R^{2} dV$$
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+##心得感想
+這門課對完全沒碰過程式的我來說很辛苦,要跟上大家的腳步自己必須要花更多心思與時間,從了解黑框的作用到設立自己的網站部落格自己寫程式,這門課雖然短短半學期的時間,我卻發現原來電腦裡的一字一句都如此重要,也很感謝老師辛勤的指導,還用心拍影片讓我們能在課餘時間複習,還會補充很多自己的感想,啟發我們的世界觀,非常充實!
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
     </script>
 </section>
 
