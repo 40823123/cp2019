@@ -115,12 +115,10 @@ Created by [40823123]
 
 						
 </t>
-<t tx="leo.20180902120523.19">## 使用 iframe 導入影片
-
-### 導入影片 template
-
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
+<t tx="leo.20180902120523.19">## 影片
+https://youtu.be/zyyLVJMMVxo
+https://youtu.be/TyZDyqdDx2Q
+https://youtu.be/pC0ppRKUwGc</t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
 @tabwidth -4
